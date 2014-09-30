@@ -4,11 +4,17 @@ AndroidEvent
 This is a Event receiver and dispather.Use for example:
 
 Event.addListener("eventname",new Event.EventCallBack() {
+
     @Override
+
     public void execute(Object data) {
+
         System.out.println(data);
+
     }
+
 });
+
 Event.dispatch("eventname",new Object());
 
 
